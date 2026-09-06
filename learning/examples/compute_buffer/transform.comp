@@ -1,0 +1,25 @@
+#version 450
+
+// 与 main.cpp 的 kLocalSize 保持一致。一次工作组包含 64 次 invocation。
+layout(local_size_x = 64, local_size_y = 1, local_size_z = 1) in;
+
+// set=0 对应 pipeline layout 的 pSetLayouts[0]；binding=0 对应该 set 中的条目。
+// std430 下 uint 是 32 位，数组步长 4 字节，与 C++ uint32_t 数组对应。
+layout(std430, set = 0, binding = 0) buffer Values {
+    uint values[];
+} data;
+
+// 4 字节 push constant 是元素数量，不是 buffer 的地址。
+layout(push_constant) uniform Parameters {
+    uint count;
+} parameters;
+
+void main() {
+    uint i = gl_GlobalInvocationID.x;
+    // 本例 dispatch 64 次 invocation，但只有 16 个元素；必须防止越界。
+    if (i >= parameters.count) {
+        return;
+    }
+    // 每个 invocation 只访问自己的元素，因此无需原子操作或工作组 barrier。
+    data.values[i] = data.values[i] * 2u + 1u;
+}
