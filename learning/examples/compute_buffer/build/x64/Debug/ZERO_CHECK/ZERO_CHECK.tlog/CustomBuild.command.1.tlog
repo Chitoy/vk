@@ -1,0 +1,10 @@
+^D:\PYS\VK\VULKAN_SHADER_STARTER\LEARNING\EXAMPLES\COMPUTE_BUFFER\BUILD\CMAKEFILES\D200B957B6FFC853ADA7F716DF7BC9D0\GENERATE.STAMP.RULE
+setlocal
+D:\pys\2026\develop_app\cmake\bin\cmake.exe -SD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer -BD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/vulkan_compute_buffer.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

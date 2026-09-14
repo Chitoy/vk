@@ -1,0 +1,30 @@
+^D:\PYS\VK\VULKAN_SHADER_STARTER\LEARNING\EXAMPLES\COMPUTE_BUFFER\BUILD\CMAKEFILES\22A05D6E872C8BE8E80887D6E4327049\TRANSFORM.COMP.SPV.RULE
+setlocal
+D:\pys\2026\develop_app\cmake\bin\cmake.exe -E make_directory D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/shaders
+if %errorlevel% neq 0 goto :cmEnd
+C:\VulkanSDK\1.4.357.0\Bin\glslc.exe --target-env=vulkan1.1 D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/transform.comp -o D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/shaders/transform.comp.spv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PYS\VK\VULKAN_SHADER_STARTER\LEARNING\EXAMPLES\COMPUTE_BUFFER\BUILD\CMAKEFILES\D200B957B6FFC853ADA7F716DF7BC9D0\COMPUTE_BUFFER_SHADER.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PYS\VK\VULKAN_SHADER_STARTER\LEARNING\EXAMPLES\COMPUTE_BUFFER\CMAKELISTS.TXT
+setlocal
+D:\pys\2026\develop_app\cmake\bin\cmake.exe -SD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer -BD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build --check-stamp-file D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

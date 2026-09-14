@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2B8FC29A-7ED4-34B8-B83C-0ABF29576CD0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>compute_buffer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">compute_buffer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">compute_buffer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">compute_buffer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">compute_buffer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">compute_buffer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">compute_buffer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">compute_buffer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">compute_buffer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.357.0/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COMPUTE_SHADER_PATH="D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/shaders/transform.comp.spv";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COMPUTE_SHADER_PATH=\"D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/shaders/transform.comp.spv\";CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.4.357.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.4.357.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\VulkanSDK\1.4.357.0\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/Debug/compute_buffer.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/Debug/compute_buffer.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.357.0/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;COMPUTE_SHADER_PATH="D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/shaders/transform.comp.spv";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;COMPUTE_SHADER_PATH=\"D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/shaders/transform.comp.spv\";CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.4.357.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.4.357.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\VulkanSDK\1.4.357.0\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/Release/compute_buffer.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/Release/compute_buffer.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.357.0/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;COMPUTE_SHADER_PATH="D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/shaders/transform.comp.spv";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;COMPUTE_SHADER_PATH=\"D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/shaders/transform.comp.spv\";CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.4.357.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.4.357.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\VulkanSDK\1.4.357.0\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/MinSizeRel/compute_buffer.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/MinSizeRel/compute_buffer.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.357.0/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;COMPUTE_SHADER_PATH="D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/shaders/transform.comp.spv";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;COMPUTE_SHADER_PATH=\"D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/shaders/transform.comp.spv\";CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.4.357.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.4.357.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\VulkanSDK\1.4.357.0\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/RelWithDebInfo/compute_buffer.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/RelWithDebInfo/compute_buffer.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\pys\2026\develop_app\cmake\bin\cmake.exe -SD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer -BD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build --check-stamp-file D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXCompiler.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXCompilerABI.cpp;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCXXCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystem.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestCXXCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindPackageMessage.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindVulkan.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-Determine-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeCXXCompiler.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeRCCompiler.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\pys\2026\develop_app\cmake\bin\cmake.exe -SD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer -BD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build --check-stamp-file D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXCompiler.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXCompilerABI.cpp;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCXXCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystem.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestCXXCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindPackageMessage.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindVulkan.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-Determine-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeCXXCompiler.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeRCCompiler.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\pys\2026\develop_app\cmake\bin\cmake.exe -SD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer -BD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build --check-stamp-file D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXCompiler.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXCompilerABI.cpp;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCXXCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystem.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestCXXCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindPackageMessage.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindVulkan.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-Determine-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeCXXCompiler.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeRCCompiler.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\pys\2026\develop_app\cmake\bin\cmake.exe -SD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer -BD:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build --check-stamp-file D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXCompiler.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXCompilerABI.cpp;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCXXCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystem.cmake.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestCXXCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindPackageMessage.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\FindVulkan.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-Determine-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\pys\2026\develop_app\cmake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeCXXCompiler.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeRCCompiler.cmake;D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\4.2.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\main.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\ZERO_CHECK.vcxproj">
+      <Project>{CD2DCED1-F395-39F7-8D2A-DE6118AD0DBE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\compute_buffer_shader.vcxproj">
+      <Project>{2FB9F51A-6AE8-3B25-8F17-C63777FE72FD}</Project>
+      <Name>compute_buffer_shader</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

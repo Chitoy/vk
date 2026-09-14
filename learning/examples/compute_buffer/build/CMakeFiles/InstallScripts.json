@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/pys/vk/vulkan_shader_starter/learning/examples/compute_buffer/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\x64\Debug\compute_buffer_shader</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\Debug\compute_buffer.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\pys\vk\vulkan_shader_starter\learning\examples\compute_buffer\build\x64\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
